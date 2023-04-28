@@ -179,19 +179,6 @@ thead>tr>td {
   }
 }
 
-@media only screen and (orientation:landscape) {
-  .detail-view.open {
-    position: absolute;
-    display: block;
-    right: 0;
-    width: 100% !important;
-  }
-
-  .resize-handle {
-    display: none !important;
-  }
-}
-
 .detail-content {
   margin: 32px;
   container-type: inline-size;
