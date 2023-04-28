@@ -165,6 +165,33 @@ thead>tr>td {
   right: 0;
 }
 
+/* viewport for small devices and most phones */
+@media only screen and (max-width: 480px) {
+  .detail-view.open {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100% !important;
+  }
+
+  .resize-handle {
+    display: none !important;
+  }
+}
+
+@media only screen and (orientation:landscape) {
+  .detail-view.open {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100% !important;
+  }
+
+  .resize-handle {
+    display: none !important;
+  }
+}
+
 .detail-content {
   margin: 32px;
   container-type: inline-size;
@@ -215,7 +242,7 @@ thead>tr>td {
   grid-gap: 20px;
 }
 
-/* viewports for most tablets */
+/* viewport for most tablets */
 @container detail-content (min-width: 768px) {
   .detail-grid {
     grid-template:
@@ -226,7 +253,7 @@ thead>tr>td {
   }
 }
 
-/* viewports for large devices and wide screens */
+/* viewport for large devices and wide screens */
 @container detail-content (min-width: 1200px) {
   .detail-grid {
     grid-template:
