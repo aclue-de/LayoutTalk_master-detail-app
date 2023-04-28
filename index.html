@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master-Detail View</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="images/Logo.svg" alt="Logo" />
+      <img src="images/account-icon.svg" alt="Profile" />
+    </header>
+
+    <main>
+      <section class="master-view">
+        <h1 class="master-heading">Objects</h1>
+        <table class="master-content">
+          <thead>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Show Details</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name-cell">
+                <img src="images/object-icon.svg" />
+                <p>Object 1</p>
+              </td>
+              <td><p>Generic</p></td>
+              <td>
+                <button class="icon-btn open-detail-btn">
+                  <img src="images/open-tab-icon.svg" />
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="name-cell">
+                <img src="images/object-icon.svg" />
+                <p>Object 2</p>
+              </td>
+              <td><p>Generic</p></td>
+              <td>
+                <button class="icon-btn open-detail-btn">
+                  <img src="images/open-tab-icon.svg" />
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="name-cell">
+                <img src="images/object-icon.svg" />
+                <p>Object 3</p>
+              </td>
+              <td><p>Generic</p></td>
+              <td>
+                <button class="icon-btn open-detail-btn">
+                  <img src="images/open-tab-icon.svg" />
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="detail-view">
+        <div class="resize-handle">
+          <img src="images/drag-handle-icon.svg" />
+        </div>
+        <div class="detail-content">
+          <div class="detail-content--header">
+            <h2>Object Details</h2>
+            <button class="icon-btn close-detail-btn">
+              <img src="images/close-icon.svg" />
+            </button>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-area blue"></div>
+            <div class="detail-area red"></div>
+            <div class="detail-area orange"></div>
+            <div class="detail-area yellow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
