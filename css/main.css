@@ -21,3 +21,20 @@ main {
   background-color: var(--pastel-color--yellow);
   flex: 1;
 }
+
+.detail-grid {
+  width: 100%;
+  display: grid;
+  grid-template:
+    "blue blue" 1fr
+    "red orange" 1fr
+    "red yellow" 1fr
+    / 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.detail-area {
+  min-height: 20rem;
+  background-color: white;
+  border: 1px solid black;
+}
