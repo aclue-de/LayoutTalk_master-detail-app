@@ -1,6 +1,4 @@
 @import "./global.css";
-@import "./master-view.css";
-@import "./detail-view.css";
 
 header {
   background-color: var(--pastel-color--blue);
