@@ -72,6 +72,10 @@
     background-color: var(--background-color);
 }
 
+.detail-area {
+    border-radius: 8px;
+}
+
 .detail-grid {
     width: 100%;
     display: grid;
@@ -104,10 +108,6 @@
             "red yellow yellow" 1fr
             / 1fr 1fr 1fr;
     }
-}
-
-.detail-area {
-    border-radius: 8px;
 }
 
 .detail-grid>div {
