@@ -26,11 +26,27 @@ main {
   width: 100%;
   display: grid;
   grid-template:
-    "blue blue" 1fr
-    "red orange" 1fr
-    "red yellow" 1fr
+    "one one" 1fr
+    "two three" 1fr
+    "two four" 1fr
     / 1fr 1fr;
   grid-gap: 20px;
+}
+
+.area-one {
+  grid-area: one;
+}
+
+.area-two {
+  grid-area: two;
+}
+
+.area-three {
+  grid-area: three;
+}
+
+.area-four {
+  grid-area: four;
 }
 
 .detail-area {
