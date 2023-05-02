@@ -23,6 +23,13 @@ main {
   flex: 1;
 }
 
+.master-heading {
+  position: sticky;
+  top: 4rem;
+  background-color: inherit;
+  margin: 1em 0;
+}
+
 .detail-view {
   background-color: var(--pastel-color--yellow);
   /* flex: 1; */
