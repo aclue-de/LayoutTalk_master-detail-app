@@ -1,0 +1,115 @@
+.detail-view {
+    position: absolute;
+    display: none;
+    right: -100%;
+    width: 50%;
+    min-width: 200px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+    align-items: center;
+}
+
+.detail-view.open {
+    position: relative;
+    display: block;
+    right: 0;
+}
+
+/* viewport for small devices and most phones */
+@media only screen and (max-width: 480px) {
+    .detail-view.open {
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 100% !important;
+    }
+
+    .resize-handle {
+        display: none !important;
+    }
+}
+
+.detail-content {
+    margin: 32px;
+    container-type: inline-size;
+    container-name: detail-content;
+}
+
+.detail-content--header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -24px;
+    padding: 24px 0px;
+    background-color: white;
+}
+
+.resize-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 100%;
+    cursor: col-resize;
+    display: flex;
+    align-items: center;
+}
+
+.resize-handle>img {
+    position: fixed;
+    top: 50%;
+    transform: rotate(90deg);
+    width: 24px;
+    height: 24px;
+}
+
+.resize-handle:hover {
+    background-color: var(--background-color);
+}
+
+.detail-grid {
+    width: 100%;
+    display: grid;
+    grid-template:
+        "blue" 1fr
+        "orange" 1fr
+        "red" 1fr
+        "yellow" 1fr
+        / 1fr;
+    grid-gap: 20px;
+}
+
+/* viewport for most tablets */
+@container detail-content (min-width: 768px) {
+    .detail-grid {
+        grid-template:
+            "blue blue" 1fr
+            "red orange" 1fr
+            "red yellow" 1fr
+            / 1fr 1fr;
+    }
+}
+
+/* viewport for large devices and wide screens */
+@container detail-content (min-width: 1200px) {
+    .detail-grid {
+        grid-template:
+            "blue blue orange" 1fr
+            "red yellow yellow" 1fr
+            "red yellow yellow" 1fr
+            / 1fr 1fr 1fr;
+    }
+}
+
+.detail-area {
+    border-radius: 8px;
+}
+
+.detail-grid>div {
+    min-height: 300px;
+}
