@@ -32,6 +32,27 @@ main {
   height: 100%;
 }
 
+.detail-content {
+  width: 100%;
+}
+
+.detail-grid {
+  width: 100%;
+  display: grid;
+  grid-template:
+    "blue blue" 1fr
+    "red orange" 1fr
+    "red yellow" 1fr
+    / 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.detail-area {
+  min-height: 20rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
 .detail-view.open {
   position: static;
   display: flex;
@@ -43,6 +64,7 @@ main {
   margin: 1rem 0;
   width: 100%;
   height: fit-content;
+  background-color: var(--pastel-color--yellow);
 
   display: flex;
   justify-content: space-between;
