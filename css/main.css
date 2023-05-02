@@ -70,3 +70,65 @@ main {
 .resize-handle:hover {
   background-color: var(--background-color);
 }
+
+@media only screen and (max-width: 480px) {
+  main {
+    height: 100%;
+  }
+
+  .detail-view.open {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100% !important;
+  }
+
+  .resize-handle {
+    display: none !important;
+  }
+}
+
+.detail-content {
+  width: 100%;
+  container-type: inline-size;
+  container-name: detail-content;
+}
+
+.detail-grid {
+  width: 100%;
+  display: grid;
+  grid-template:
+    "blue" 1fr
+    "orange" 1fr
+    "red" 1fr
+    "yellow" 1fr
+    / 1fr;
+  grid-gap: 20px;
+}
+
+.detail-area {
+  min-height: 20rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
+@container detail-content (min-width: 768px) {
+  .detail-grid {
+    grid-template:
+      "blue blue" 1fr
+      "red orange" 1fr
+      "red yellow" 1fr
+      / 1fr 1fr;
+  }
+}
+
+/* viewport for large devices and wide screens */
+@container detail-content (min-width: 1200px) {
+  .detail-grid {
+    grid-template:
+      "blue blue orange" 1fr
+      "red yellow yellow" 1fr
+      "red yellow yellow" 1fr
+      / 1fr 1fr 1fr;
+  }
+}
