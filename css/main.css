@@ -16,6 +16,7 @@ main {
 .master-view {
   background-color: var(--pastel-color--red);
   flex: 1;
+  border-right: 1px solid red;
 }
 
 .detail-view {
