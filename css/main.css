@@ -4,12 +4,21 @@
 
 header {
   background-color: var(--pastel-color--blue);
+  height: 64px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  height: 100%;
 }
 
 .master-view {
   background-color: var(--pastel-color--red);
+  flex: 1;
 }
 
 .detail-view {
   background-color: var(--pastel-color--yellow);
+  flex: 1;
 }
