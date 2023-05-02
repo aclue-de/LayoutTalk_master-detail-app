@@ -91,6 +91,7 @@ main {
 .master-view {
   padding: 24px;
   flex: 1;
+  overflow-y: auto;
 }
 
 .master-heading {
@@ -102,6 +103,11 @@ main {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   width: 100%;
+  height: 120%;
+}
+
+.master-content>table {
+  width: 100%;
 }
 
 tr {
@@ -110,6 +116,12 @@ tr {
 
 td {
   padding: 16px 24px;
+}
+
+thead {
+  position: sticky;
+  top: -24px;
+  background-color: white;
 }
 
 thead>tr>td {
@@ -208,6 +220,7 @@ thead>tr>td {
 
 .resize-handle>img {
   position: fixed;
+  top: 50%;
   transform: rotate(90deg);
   width: 24px;
   height: 24px;
