@@ -21,13 +21,7 @@ main {
 .master-view {
   background-color: var(--pastel-color--red);
   flex: 1;
-}
-
-.master-heading {
-  position: sticky;
-  top: 4rem;
-  background-color: inherit;
-  margin: 1em 0;
+  border-right: 1px solid red;
 }
 
 .detail-view {
@@ -41,7 +35,40 @@ main {
 }
 
 .detail-view.open {
+  position: static;
+  display: flex;
+}
+
+.detail-heading {
+  position: sticky;
+  top: 4rem;
+  margin: 1rem 0;
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.resize-handle {
   position: relative;
-  display: block;
-  right: 0;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 100%;
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+}
+
+.resize-handle>img {
+  position: fixed;
+  top: 50%;
+  transform: rotate(90deg);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.resize-handle:hover {
+  background-color: var(--background-color);
 }
