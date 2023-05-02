@@ -43,6 +43,7 @@ main {
   margin: 1rem 0;
   width: 100%;
   height: fit-content;
+  background-color: var(--pastel-color--yellow);
 
   display: flex;
   justify-content: space-between;
