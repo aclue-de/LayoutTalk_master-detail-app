@@ -99,12 +99,28 @@ main {
   width: 100%;
   display: grid;
   grid-template:
-    "blue" 1fr
-    "orange" 1fr
-    "red" 1fr
-    "yellow" 1fr
+    "one" 1fr
+    "three" 1fr
+    "two" 1fr
+    "four" 1fr
     / 1fr;
   grid-gap: 20px;
+}
+
+.area-one {
+  grid-area: one;
+}
+
+.area-two {
+  grid-area: two;
+}
+
+.area-three {
+  grid-area: three;
+}
+
+.area-four {
+  grid-area: four;
 }
 
 .detail-area {
@@ -116,9 +132,9 @@ main {
 @container detail-content (min-width: 768px) {
   .detail-grid {
     grid-template:
-      "blue blue" 1fr
-      "red orange" 1fr
-      "red yellow" 1fr
+      "one one" 1fr
+      "two three" 1fr
+      "two four" 1fr
       / 1fr 1fr;
   }
 }
@@ -127,9 +143,9 @@ main {
 @container detail-content (min-width: 1200px) {
   .detail-grid {
     grid-template:
-      "blue blue orange" 1fr
-      "red yellow yellow" 1fr
-      "red yellow yellow" 1fr
+      "one one three" 1fr
+      "two four four" 1fr
+      "two four four" 1fr
       / 1fr 1fr 1fr;
   }
 }

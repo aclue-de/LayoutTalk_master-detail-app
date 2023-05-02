@@ -107,23 +107,3 @@ thead>tr>td {
     align-items: center;
     gap: 16px;
 }
-
-.blue {
-    grid-area: blue;
-    background-color: var(--pastel-color--blue);
-}
-
-.red {
-    grid-area: red;
-    background-color: var(--pastel-color--red);
-}
-
-.orange {
-    grid-area: orange;
-    background-color: var(--pastel-color--orange);
-}
-
-.yellow {
-    grid-area: yellow;
-    background-color: var(--pastel-color--yellow);
-}
