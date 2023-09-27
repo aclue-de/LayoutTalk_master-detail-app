@@ -1,26 +1,25 @@
 * {
-    --primary-color: #2D5569;
-    --background-color: #F5F5F5;
-    --accent-color: #EEEEEE;
-    --text-color: #212121;
-    --pastel-color--blue: #DAD2FF;
-    --pastel-color--red: #FFDADA;
-    --pastel-color--orange: #FFEEDA;
-    --pastel-color--yellow: #FEFBE0;
+  --primary-color: #2D5569;
+  --background-color: #F5F5F5;
+  --accent-color: #EEEEEE;
+  --text-color: #212121;
+  --pastel-color--blue: #DAD2FF;
+  --pastel-color--red: #FFDADA;
+  --pastel-color--orange: #FFEEDA;
+  --pastel-color--yellow: #FEFBE0;
 }
 
 html {
-    height: 100%;
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    height: calc(100% - 64px);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    font-family: 'Open Sans';
+  height: calc(100% - 64px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: 'Open Sans';
 }
 
 h1,
@@ -28,102 +27,102 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1 {
-    font-size: 24px;
-    line-height: 32px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h2 {
-    font-size: 20px;
-    line-height: 30px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 p {
-    font-size: 14px;
-    line-height: 21px;
-    color: var(--text-color);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-color);
 }
 
 img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .icon-btn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: transparent;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-btn:hover {
-    background-color: var(--background-color);
-    cursor: pointer;
+  background-color: var(--background-color);
+  cursor: pointer;
 }
 
 .logo {
-    padding-right: 24px;
-    border-right: 1px solid var(--accent-color);
+  padding-right: 24px;
+  border-right: 1px solid var(--accent-color);
 }
 
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
 tr {
-    box-shadow: inset 0px -1px 0px var(--accent-color);
+  box-shadow: inset 0px -1px 0px var(--accent-color);
 }
 
 td {
-    padding: 16px 24px;
+  padding: 16px 24px;
 }
 
 thead {
-    background-color: white;
+  background-color: white;
 }
 
 thead>tr>td {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--primary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--primary-color);
 }
 
 .name-cell {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .blue {
-    grid-area: blue;
-    background-color: var(--pastel-color--blue);
+  grid-area: blue;
+  background-color: var(--pastel-color--blue);
 }
 
 .red {
-    grid-area: red;
-    background-color: var(--pastel-color--red);
+  grid-area: red;
+  background-color: var(--pastel-color--red);
 }
 
 .orange {
-    grid-area: orange;
-    background-color: var(--pastel-color--orange);
+  grid-area: orange;
+  background-color: var(--pastel-color--orange);
 }
 
 .yellow {
-    grid-area: yellow;
-    background-color: var(--pastel-color--yellow);
+  grid-area: yellow;
+  background-color: var(--pastel-color--yellow);
 }
